@@ -59,9 +59,9 @@ public class EmployeeDetails {
 		HashMap<Integer,String> map = new HashMap<Integer,String>();
 		
 		map.put(null, null);
-		map.put(emp2, 2);
+	//	map.put(emp2, 2);
 		
-		for (Employee employeemap : map.keySet()) {
+		for (Integer employeemap : map.keySet()) {
 			
 			
 			

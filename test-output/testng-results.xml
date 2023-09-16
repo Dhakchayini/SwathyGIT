@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-06-21T17:21:26Z" name="Default suite" finished-at="2023-06-21T17:21:39Z" duration-ms="12273">
+    <groups>
+    </groups>
+    <test started-at="2023-06-21T17:21:26Z" name="Default test" finished-at="2023-06-21T17:21:39Z" duration-ms="12273">
+      <class name="org.TestNG.RunnerMMT">
+        <test-method is-config="true" signature="dateTime()[pri:0, instance:org.TestNG.RunnerMMT@39ac0c0a]" started-at="2023-06-21T17:21:26Z" name="dateTime" finished-at="2023-06-21T17:21:26Z" duration-ms="46" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dateTime -->
+        <test-method is-config="true" signature="launching()[pri:0, instance:org.TestNG.RunnerMMT@39ac0c0a]" started-at="2023-06-21T17:21:26Z" name="launching" finished-at="2023-06-21T17:21:37Z" duration-ms="10871" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launching -->
+        <test-method signature="tc1()[pri:0, instance:org.TestNG.RunnerMMT@39ac0c0a]" started-at="2023-06-21T17:21:37Z" name="tc1" finished-at="2023-06-21T17:21:38Z" duration-ms="1134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc1 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:org.TestNG.RunnerMMT@39ac0c0a]" started-at="2023-06-21T17:21:38Z" name="closeBrowser" finished-at="2023-06-21T17:21:39Z" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="endDateTime()[pri:0, instance:org.TestNG.RunnerMMT@39ac0c0a]" started-at="2023-06-21T17:21:39Z" name="endDateTime" finished-at="2023-06-21T17:21:39Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endDateTime -->
+      </class> <!-- org.TestNG.RunnerMMT -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

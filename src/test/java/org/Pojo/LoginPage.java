@@ -2,7 +2,10 @@ package org.Pojo;
 
 import org.base.BaseClass;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage extends BaseClass{
@@ -18,15 +21,19 @@ public class LoginPage extends BaseClass{
 
 	@FindBy(xpath="(//input[@type='text'])[3]")
 	private WebElement surName;
-	
-	@FindBy(xpath="//input[@name='reg_email__']")
+	@CacheLookup
+	@FindBys({
+	@FindBy(xpath="//input[@name='reg_email__']"),
+	@FindBy(xpath = "(//input[@data-type='text'])[3]")})
 	private WebElement email;
 	
 	@FindBy(xpath = "//input[@name='reg_email_confirmation__']")
 	private WebElement confirmEmail;
+	@CacheLookup
+	@FindAll({
 	
-	
-	@FindBy(xpath="//input[@name='reg_passwd__']")
+	@FindBy(xpath="//input[@name='reg_passwd__']"),
+	@FindBy(xpath="//input[@id='password_step_input']")})
 	private WebElement pswd;
 	
 	@FindBy(xpath = "//select[@name='birthday_day']")
@@ -44,9 +51,15 @@ public class LoginPage extends BaseClass{
 	@FindBy(xpath="//button[@name='websubmit']")
 	private WebElement signUp;
 	
+	@FindBy(xpath = "//span[text()='5-digit code']")
+	private WebElement confirmCode;
+	
 
 	public WebElement getSurName() {
 		return surName;
+	}
+	public WebElement getConfirmCode() {
+		return confirmCode;
 	}
 	public WebElement getMobileNo() {
 		return email;

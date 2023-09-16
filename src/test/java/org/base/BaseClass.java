@@ -87,6 +87,12 @@ public class BaseClass {
 		driver.quit();
 	}
 
+	public static String getAttribute(WebElement element ) {
+		String attribute = element.getAttribute("value");
+		return attribute;
+	}
+	
+	
 	public static void sendKeys(WebElement element, String value) {
 		element.sendKeys(value);
 	}
@@ -193,7 +199,7 @@ public class BaseClass {
 	}
 
 	public static void implicitWait() {
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(70, TimeUnit.SECONDS);
 	}
 
 	public static void explicit_wait(String value, Duration seconds, WebElement element) {
